@@ -1,9 +1,9 @@
 pipeline{
     agent any
     stages{
-        stage(‘Branch test’){
+        stage(‘test’){
             steps{
-                echo ‘Job name is ${env.BRANCH_NAME}’
+                echo ‘job name is ${env.BRANCH_NAME}’
             }
         }
     }
